@@ -109,6 +109,44 @@
     counter_static();
     counter_static();
     counter_static();
+
+    echo "<br>"
+    ?>
+
+    <hr>
+
+    <h1>Isset()</h1>
+    <?php
+    $firstname = "Test";
+    $name = $firstname;
+    echo isset($name)? "Variable Set": "Variable is not set";
+    ?>
+
+    echo "<br>"
+    ?>
+
+    <hr>
+
+    <h1>Constant()</h1>
+    <?php
+   	    define( "LANGUAGE", "PHP");
+    $lang = LANGUAGE;
+    echo "This program is written using $lang <br>";
+    echo "This program is written using LANGUAGE <br>";
+    echo "This program is written using " . LANGUAGE . " <br>";
+
+
+    //Sample 2
+    define( "LANGUAGE", "JAVA");
+    echo "This program is written using " . LANGUAGE . " <br>";
+
+    //Sample 3
+    $LANGUAGE = "JAVA";
+    echo "This program is written using " . $LANGUAGE . " <br>";
+    echo "This program is written using " . LANGUAGE . " <br>";
+    
+    define ( "NAME", "");
+    echo constant('NAME');
     ?>
 </body>
 </html>
