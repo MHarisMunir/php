@@ -1,0 +1,2 @@
+$apth = "";
+scandir = 
